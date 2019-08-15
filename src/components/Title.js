@@ -1,13 +1,12 @@
 import React from 'react'
-
+import styled from 'styled-components'
 export default function Title({ name, title }) {
     return (
-        <div className="row">
-            <div className="col-10 mx-auto my-2 text-center text-title">
-                <h1 className="text-capitalize font-weight-bold ">{name}
-                    <strong className="text-blue">{title}</strong>
-                </h1>
-            </div>
-        </div>
+        <div className="d-flex justify-content-between align-items-end">
+
+            <span style={{ fontWeight: "bold", fontSize: "2rem" }} className="text-uppercase mx-5 my-3 ">{title}</span>
+            {/* <p className="mx-5">Displaying: # results</p> */}
+
+        </div >
     )
 }

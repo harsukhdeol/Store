@@ -4,11 +4,13 @@
   --mainWhite: #f3f3f3;
   --mainDark: #232528;
   --mainYellow: #fdb227;
+  
 }
 
 body{
-  font-family: "Century Gothic", sans-serif  !important;
-  background: var(--mainWhite) !important;
+  font-family:   "Arial", "Century Gothic", sans-serif  !important;
+  font-size: 12px;
+  background: white !important;
   color: var(--mainDark) !important;
 }
 .text-title{

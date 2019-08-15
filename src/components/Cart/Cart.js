@@ -15,10 +15,10 @@ export default class Cart extends Component {
                         if (cart.length > 0) {
                             return (
                                 <React.Fragment>
-                                    <Title name="your" title="cart" />
+                                    <Title title="cart" />
                                     <CartColumns />
                                     <CartList value={value} />
-                                    <CartTotal value={value} />
+                                    <CartTotal value={value} history={this.props.history} />
                                 </React.Fragment>
                             )
                         } else {

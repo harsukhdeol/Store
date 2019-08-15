@@ -1,20 +1,22 @@
 import styled from 'styled-components'
 
 export const ButtonContainer = styled.button`
-    text-transform: capitalize;
-    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
     background: transparent;
-    border: 0.1rem solid var(--lightblue);
-    border-color: ${props => props.cart ? "var(--mainYellow)" : "var(--lightBlue)"};
-    color: ${props => props.cart ? "var(--mainYellow)" : "var(--lightBlue)"};
-    border-radius: 0.5rem;
-    padding: 0.2rem 0.5rem;
+    border: 1px solid black;
+    border-color: ${props => props.cart ? "gray" : "black"};
+    color: ${props => props.cart ? "gray" : "black"};
+    border-radius: 26px;
+
+    padding: 1rem 1.5rem;
     cursor: pointer;
-    margin 0.2rem 0.5rem;
+    margin: 0.2rem 0.5rem;
     transition: all 0.5s ease-in-out;
     &:hover{
-        background:  ${props => props.cart ? "var(--mainYellow)" : "var(--lightBlue)"};
-        color: var(--mainBlue);
+        background:  ${props => props.cart ? "gray" : "black"};
+        color: white;
     }
     &:focus{
         outline: none;

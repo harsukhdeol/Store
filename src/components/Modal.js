@@ -18,14 +18,14 @@ export default class Modal extends Component {
                             <ModalContainer>
                                 <div className="container">
                                     <div className="row">
-                                        <div id="modal" className="p-5 col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize">
+                                        <div id="modal" className="p-5 mx-auto col-md-6 col-lg-4  text-center text-capitalize">
                                             <h5>item added to cart!</h5>
-                                            <img src={img} className="img-fluid" alt="product" />
-                                            <h5>{title}</h5>
-                                            <h5 className="text-muted">price: ${price}</h5>
-                                            <Link to='./'>
+                                            <img style={{ maxHeight: "60vh", width: "auto" }} src={img} className="img-fluid" alt="product" />
+                                            <h5 className="text-uppercase mt-4 font-weight-bold">{title}</h5>
+                                            <h5 className="text-muted">${price}</h5>
+                                            <Link to='./all'>
                                                 <ButtonContainer onClick={() => { closeModal() }}>
-                                                    store
+                                                    back
                                                 </ButtonContainer>
 
                                             </Link>
@@ -57,6 +57,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 #modal{
-    background: var(--mainWhite);
+    background: white;
 }
 `
